@@ -14,6 +14,3 @@ Este é um modelo de landing page reutilizável criado com React, Next.js e Tail
 - React.js
 - Next.js
 - Tailwind CSS
-
-
-Este projeto está licenciado sob a [MIT License](https://opensource.org/licenses/MIT).
