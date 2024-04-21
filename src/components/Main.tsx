@@ -13,12 +13,14 @@ import Contact from './Contact'
 
 const Main = (): React.JSX.Element => {
     return (
-        <section className='flex flex-col items-center justify-center mt-16 sm:mt-0'>
-            <section className='flex w-4/5 flex-col sm:flex-row items-center mt-10'>
-                <div className='w-full sm:w-1/2 flex justify-center order-2 sm:order-1'>
+        <section
+            id='inicio'
+            className='flex flex-col items-center justify-center mt-16 sm:mt-0'>
+            <section className='flex w-4/5 flex-col lg:flex-row items-center mt-10'>
+                <div className='w-full lg:w-1/2 flex justify-center order-2 lg:order-1'>
                     <div className='w-full sm:w-1/2 flex flex-col justify-center items-center font-mono mt-5 sm:mt-0'>
                         <h1 className='text-3xl mb-8 font-bold'>Ana Beatriz Mendes</h1>
-                        <h2 className='line-clamp-2 w-60 text-lg text-center'>Psicóloga especialista em <span className='font-bold'>Psicologia Clínica</span></h2>
+                        <h2 className='w-60 text-lg md:text-xl text-center'>Psicóloga especialista em <span className='font-bold'>Psicologia Clínica</span></h2>
                         <div className='animate-line bg-blue-0 h-0.5 mb-2'></div>
                         <div className='animate-line2 bg-blue-0 h-0.5 mb-8'></div>
                         <p className='text-2xl pb-5'>Sessão 100% online</p>
@@ -29,7 +31,7 @@ const Main = (): React.JSX.Element => {
                         </div>
                     </div>
                 </div>
-                <div className='w-full sm:w-1/2 flex justify-center items-center order-1 sm:order-2'>
+                <div className='w-full lg:w-1/2 flex justify-center items-center order-1 lg:order-2'>
                     <Image
                         src={Photo}
                         alt='Foto de capa da página'
@@ -39,8 +41,10 @@ const Main = (): React.JSX.Element => {
                     />
                 </div>
             </section>
-            <section className='flex w-full sm:w-3/5 '>
-                <div className='mx-auto flex flex-col sm:flex-row gap-0 sm:gap-20'>
+            <section className='flex w-full sm:w-3/5 md:w-[90%]'>
+                <div
+                    id='servicos'
+                    className='mx-auto flex flex-col sm:flex-row gap-0 sm:gap-20 md:flex-wrap md:gap-10 md:justify-center'>
                     <Card
                         aos='fade-up'
                         text={"Transformamos vidas: mais de 100 clientes atendidos com sucesso em 2023, totalizando mais de 1800 sessões de terapia online."}
@@ -61,10 +65,10 @@ const Main = (): React.JSX.Element => {
 
             <Contact text="Comece a mudança dentro de você" />
 
-            <section className='w-4/5 flex flex-col items-center'>
+            <section className='w-4/5 lg:w-full xl:w-4/5 flex flex-col items-center px-2'>
                 <h1 className='text-3xl mb-10 tracking-widest font-bold text-black/60 text-center font-serif'>Benefícios da Terapia</h1>
-                <div className='w-full flex justify-center items-center'>
-                    <div className='hidden sm:block w-1/2'>
+                <div className='w-full flex md:flex-col lg:flex-row justify-center items-center gap-10'>
+                    <div className='hidden w-1/2 md:block md:w-full lg:w-1/2'>
                         <Image
                             src={talk}
                             alt='Foto duas pessoas conversando'
@@ -73,37 +77,37 @@ const Main = (): React.JSX.Element => {
                             priority
                         />
                     </div>
-                    <div className='w-full sm:w-1/2 flex justify-center items-center'>
-                        <ul className='flex flex-col gap-y-16'>
+                    <div className='w-full lg:w-1/2 xl: md:w-full flex justify-center items-center'>
+                        <ul className='flex flex-col gap-y-16 md:mt-5 items-start'>
                             <div className='flex gap-5 items-center'>
-                                <p className='w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-blue-0'></p>
+                                <p className='w-4 h-4 md:w-6 md:h-6 rounded-full bg-blue-0'></p>
                                 <Options
                                     text='Ampliar auto conhecimento'
-                                    className='text-slate-950 w-auto hover:text-slate-950 hover:font-normal text-sm sm:text-normal text-left sm:text-center'
+                                    className='text-slate-950 w-auto hover:text-slate-950 hover:font-normal text-sm sm:text-normal md:text-xl text-left md:text-center'
                                 />
                             </div>
 
                             <div className='flex gap-5 items-center'>
-                                <p className='w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-blue-0'></p>
+                                <p className='w-4 h-4 md:w-6 md:h-6 rounded-full bg-blue-0'></p>
                                 <Options
                                     text='Desenvolver habilidades de enfrentamento'
-                                    className='text-slate-950 w-auto hover:text-slate-950 hover:font-normal text-sm sm:text-normal text-left sm:text-center'
+                                    className='text-slate-950 w-auto hover:text-slate-950 hover:font-normal text-sm sm:text-normal md:text-xl text-left md:text-center'
                                 />
                             </div>
 
                             <div className='flex gap-5 items-center'>
-                                <p className='w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-blue-0'></p>
+                                <p className='w-4 h-4 md:w-6 md:h-6 rounded-full bg-blue-0'></p>
                                 <Options
                                     text='Ajudar no processo da tomada de decissão'
-                                    className='text-slate-950 w-auto hover:text-slate-950 hover:font-normal text-sm sm:text-normal text-left sm:text-center'
+                                    className='text-slate-950 w-auto hover:text-slate-950 hover:font-normal text-sm sm:text-normal md:text-xl text-left md:text-center'
                                 />
                             </div>
 
                             <div className='flex gap-5 items-center'>
-                                <p className='w-4 h-4 sm:w-6 sm:h-6 rounded-full bg-blue-0'></p>
+                                <p className='w-4 h-4 md:w-6 md:h-6 rounded-full bg-blue-0'></p>
                                 <Options
                                     text='Indentificar e modificar comportamentos disfuncionais'
-                                    className='text-slate-950 w-auto hover:text-slate-950 hover:font-normal text-sm sm:text-normal text-left sm:text-center'
+                                    className='text-slate-950 w-auto hover:text-slate-950 hover:font-normal text-sm sm:text-normal md:text-xl text-left md:text-center'
                                 />
                             </div>
                         </ul>
@@ -112,14 +116,16 @@ const Main = (): React.JSX.Element => {
             </section>
 
             <section className='w-full mt-10'>
-                <div className="relative sm:h-[600px] bg-white overflow-hidden">
+                <div className="relative lg:h-auto md:h-[900px] bg-white overflow-hidden">
                     <div className="absolute inset-0 w-full h-full overflow-hidden">
                         <div className="absolute inset-0 bg-blue-0 transform skew-y-12 sm:skew-y-6">
                         </div>
                     </div>
-                    <div className="relative z-10 p-8 w-4/5 mx-auto flex flex-col sm:flex-row justify-center items-center gap-10">
-                        <div className='w-full sm:w-1/2'>
-                            <h1 className='block sm:hidden tracking-widest text-2xl font-medium pb-10 text-center'>Quem sou eu?</h1>
+                    <div className="relative z-10 p-8 w-4/5 mx-auto flex flex-col lg:flex-row justify-center items-center gap-10">
+                        <div
+                            id='sobre'
+                            className='w-full lg:w-1/2'>
+                            <h1 className='block lg:hidden tracking-widest text-2xl font-medium pb-10 text-center'>Quem sou eu?</h1>
                             <Image
                                 src={Photo}
                                 alt='Foto de capa da página'
@@ -130,8 +136,8 @@ const Main = (): React.JSX.Element => {
                             />
                         </div>
 
-                        <div className='w-full sm:w-1/2'>
-                            <h1 className='hidden sm:block text-3xl mb-10 tracking-widest font-bold text-black/60 font-serif'>Quem sou eu?</h1>
+                        <div className='w-full lg:w-1/2'>
+                            <h1 className='hidden lg:block text-3xl mb-10 tracking-widest font-bold text-black/60 font-serif'>Quem sou eu?</h1>
                             <div className='font-medium flex flex-col gap-6 text-base tracking-wide text-center'>
                                 <p>
                                     Meu nome é Dra. Ana Beatriz Mendes e sou uma psicóloga clínica apaixonada pelo desenvolvimento humano. Tive o privilégio de estagiar em instituições públicas como o CAPS e o CREAS, experiências que enriqueceram minha prática clínica e me permitiram construir uma base teórica sólida e diferenciada.
@@ -150,7 +156,7 @@ const Main = (): React.JSX.Element => {
                 <div>
                     <SideProgress />
                 </div>
-                <div className='w-3/5'>
+                <div className='w-3/5 md:w-4/5 lg:w-3/5'>
                     <Card
                         icon={IconWhatsapp(65)}
                         head='Entre em contato'
@@ -172,12 +178,12 @@ const Main = (): React.JSX.Element => {
 
             <Contact text="Comece a mudança dentro de você" />
 
-            <section className='w-11/12 sm:w-2/5'>
+            <section className='w-11/12 md:w-4/5 lg:w-3/5'>
                 <h1 className='text-3xl mb-10 tracking-widest font-bold text-black/60 text-center font-serif'>Depoimentos</h1>
                 <Carrossel />
             </section>
 
-            <section className='w-11/12 sm:w-2/5 mt-72'>
+            <section className='w-11/12 md:w-4/5 lg:w-3/5 mt-72'>
                 <h1 className='text-xl sm:text-3xl my-10 sm:mb-10 tracking-widest font-bold text-black/60 text-center font-serif'>
                     Perguntas Frequentes (FAQ)
                 </h1>

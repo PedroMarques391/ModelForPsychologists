@@ -5,9 +5,10 @@ interface IOptionsProps {
   text: string | any
   className?: string
   href?: string
+  id?: string
 }
 
-const Options = ({ text, className, href }: IOptionsProps): React.JSX.Element => {
+const Options = ({ text, className, href, id }: IOptionsProps): React.JSX.Element => {
   return (
     href ? (
       <li className={`
@@ -21,7 +22,10 @@ const Options = ({ text, className, href }: IOptionsProps): React.JSX.Element =>
       </li>
     ) :
       (
-        <li className={`text-green-50 hover:text-green-200 hover:font-bold transition-all duration-500 hover:animate-pulse w-32 ${className}`}>{text}</li>
+        <li
+          className={`text-green-50 hover:text-green-200 hover:font-bold transition-all duration-500 hover:animate-pulse w-32 ${className}`}>
+          <a href={`#${id}`}>{text}</a>
+        </li>
       )
   )
 }

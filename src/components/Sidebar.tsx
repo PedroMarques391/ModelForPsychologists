@@ -13,9 +13,15 @@ const Sidebar = ({ handleOpen }: ISidebarProps): React.JSX.Element => {
                 {IconClose}
             </div>
             <ul className='flex flex-col items-center justify-center text-xl text-center h-screen gap-y-7'>
-                <Options text='Início'/>
-                <Options text='Serviços'/>
-                <Options text='Sobre mim'/>
+                <Options
+                    text='Início'
+                    id='inicio' />
+                <Options
+                    id='servicos'
+                    text='Serviços' />
+                <Options
+                    id='sobre'
+                    text='Sobre mim' />
             </ul>
         </aside>
     )
