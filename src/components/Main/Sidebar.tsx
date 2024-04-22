@@ -1,6 +1,6 @@
 import React from 'react'
-import { IconClose } from './Icons'
-import Options from './Options'
+import { IconClose } from '../Auxiliary/Icons'
+import Options from '../Options'
 
 interface ISidebarProps {
     handleOpen: () => void

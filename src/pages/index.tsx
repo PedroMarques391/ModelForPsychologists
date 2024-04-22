@@ -1,9 +1,6 @@
-import Carrossel from "@/components/Carrossel";
-import { CommentsCard } from "@/components/CommentsCard";
-import Footer from "@/components/Footer";
-import Main from "@/components/Main";
-import Progress from "@/components/Progress";
-import Topbar from "@/components/Topbar";
+import Footer from "@/components/Main/Footer";
+import Main from "@/components/Main/Main";
+import Topbar from "@/components/Main/Topbar";
 
 
 export default function Home() {

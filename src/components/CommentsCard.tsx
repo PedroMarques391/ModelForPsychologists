@@ -1,5 +1,5 @@
 import React from 'react'
-import { IconUser } from './Icons'
+import { IconUser } from './Auxiliary/Icons'
 
 interface ICommentsCardProps {
     name: string

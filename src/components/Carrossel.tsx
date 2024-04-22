@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { IconArrowLeft, IconArrowRight } from './Icons'
+import { IconArrowLeft, IconArrowRight } from './Auxiliary/Icons'
 import { CommentsCard } from './CommentsCard'
 
 const Carrossel = (): React.JSX.Element => {

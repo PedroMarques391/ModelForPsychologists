@@ -1,4 +1,4 @@
-import { IconWhatsapp } from "./Icons"
+import { IconWhatsapp } from "./Auxiliary/Icons"
 
 interface IButtonProps {
     text: string

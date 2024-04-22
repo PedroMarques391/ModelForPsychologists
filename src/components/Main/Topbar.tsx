@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import { IconBar, IconWhatsapp } from './Icons'
+import { IconBar, IconWhatsapp } from '../Auxiliary/Icons'
 import Sidebar from './Sidebar'
-import Options from './Options'
-import Logo from './Logo'
-import Button from './Button'
-import Progress from './Progress'
+import Options from '../Options'
+import Logo from '../Auxiliary/Logo'
+import Button from '../Button'
+import Progress from '../Progress'
 
 const Topbar = (): React.JSX.Element => {
     const [isOpen, setIsOpen] = useState(false)

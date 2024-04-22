@@ -1,7 +1,7 @@
 import React from 'react'
-import Logo from './Logo'
-import Options from './Options'
-import { IconFacebook, IconInstagram, IconLinkedin } from './Icons'
+import Logo from '../Auxiliary/Logo'
+import Options from '../Options'
+import { IconFacebook, IconInstagram, IconLinkedin } from '../Auxiliary/Icons'
 
 const Footer = (): React.JSX.Element => {
     return (
